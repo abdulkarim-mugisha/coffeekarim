@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>getcoffee</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>getcoffee</h1>
+        <nav>
+            <ul>
+              <li><a href="#">Contact</a></li>
+              <li><a href="#">🛒</a></li>
+            </ul>
+          </nav>
+    </header>
+    <aside>
+        <div class="filter">
+            <label for="sort">Sort by</label>
+            <select id="sort">
+                <option value="origin">Origin</option>
+                <option value="a-to-z">Name: A to Z</option>
+                <option value="z-to-a">Name: Z to A</option>
+                <option value="low-to-high">Price: Low to High</option>
+                <option value="high-to-low">Price: High to Low</option>
+            </select>
+        </div>
+        <div class="filter">
+            <label for="price">Price</label>
+            <input type="range" id="price" name="price" min="0" max="100">
+        </div>
+        <div class="filter">
+            <label for="flavors">Flavors</label>
+            <div>
+                <input type="checkbox" id="flavor1" name="flavors" value="flavor1">
+                <label for="flavor1">Flavor 1</label>
+            </div>
+            <div>
+                <input type="checkbox" id="flavor2" name="flavors" value="flavor2">
+                <label for="flavor2">Flavor 2</label>
+            </div>
+            <div>
+                <input type="checkbox" id="flavor3" name="flavors" value="flavor3">
+                <label for="flavor3">Flavor 3</label>
+            </div>
+        </div>
+    </aside>       
+    <main>
+        <div class="product">
+            <img src="imgs/sample_img.jpeg" alt="Coffee 1">
+            <p>Coffee 1</p>
+            <p>$0.00</p>
+        </div>
+        <div class="product">
+            <img src="imgs/sample_img.jpeg" alt="Coffee 2">
+            <p>Coffee 2</p>
+            <p>$0.00</p>
+        </div>
+        <div class="product">
+            <img src="imgs/sample_img.jpeg" alt="Coffee 3">
+            <p>Coffee 3</p>
+            <p>$0.00</p>
+        </div>
+        <div class="product">
+            <img src="imgs/sample_img.jpeg" alt="Coffee 4">
+            <p>Coffee 4</p>
+            <p>$0.00</p>
+        </div>
+        <div class="product">
+            <img src="imgs/sample_img.jpeg" alt="Coffee 5">
+            <p>Coffee 5</p>
+            <p>$0.00</p>
+        </div>
+        <div class="product">
+            <img src="imgs/sample_img.jpeg" alt="Coffee 6">
+            <p>Coffee 6</p>
+            <p>$0.00</p>
+        </div>
+    </main>
+    <footer>
+        <div>getcoffee</div>
+        <div>Company Location</div>
+        <div>Contact Info</div>
+    </footer>
+</body>
+</html>
