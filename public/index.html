@@ -7,10 +7,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <script src="utils.js"></script>
-    <!-- <script defer src="localData.js"></script> -->
     <script defer src="script.js"></script>
 </head>
-<body class="dark-mode">
+<body>
     <header class="dark-mode">
         <a href="index.html">
             <h1>get coffee beans</h1>
@@ -21,8 +20,9 @@
                 <div id="suggestions" class="hidden"></div>
             </div>
             <ul>
+              <li><a href="#" id="contact-link">Contact Us</a></li>
               <li><a href="#" id="account-link">Account</a></li>
-              <li><a href="#" id="cart-button">🛒</a></li>
+              <li><a href="#" id="cart-button">Cart</a></li>
             </ul>
           </nav>
     </header>     
@@ -30,33 +30,33 @@
         <section id="browse-view">
             <aside>
                     <div class="filter">
-                        <label for="price" class="filter-header dark-mode">Price</label>
+                        <label for="price" class="filter-header">Price <span>+</span></label>
                         <div class="filter-content">
                             <input type="number" id="min-price" name="min-price" placeholder="Min Price">
                             <input type="number" id="max-price" name="max-price" placeholder="Max Price">
                         </div>
                     </div>
                     <div class="filter">
-                        <label for="cupping-score" class="filter-header dark-mode">Cupping Score</label>
+                        <label for="cupping-score" class="filter-header">Cupping Score <span>+</span></label>
                         <div class="filter-content">
                             <input type="number" id="min-cupping-score" name="min-cupping-score" placeholder="Min Score">
                             <input type="number" id="max-cupping-score" name="max-cupping-score" placeholder="Max Score">
                         </div>
                     </div>
                     <div class="filter">
-                        <label for="process_method" class="filter-header dark-mode">Process Method</label>
+                        <label for="process_method" class="filter-header">Process Method <span>+</span></label>
                         <div class="filter-content" id="process-method-filter">
                             <!-- Dynamically generated process method options -->
                         </div>
                     </div>
                     <div class="filter">
-                        <label for="origin" class="filter-header dark-mode">Origin</label>
+                        <label for="origin" class="filter-header">Origin <span>+</span></label>
                         <div class="filter-content" id="origin-filter">
                             <!-- Dynamically generated origin options -->
                         </div>
                     </div>
                     <div class="filter">
-                        <label for="store" class="filter-header dark-mode">Store</label>
+                        <label for="store" class="filter-header">Store <span>+</span></label>
                         <div class="filter-content" id="importer-filter">
                             <!-- Dynamically generated store options -->
                         </div>
@@ -64,10 +64,9 @@
             </aside>
             
             <div id="content">
-                <div class="search-sort-bar">
+                <div class="sort-bar">
                     <label for="sort">Sort by</label>
                     <select id="sort">
-                        <option value="relevance">Relevance</option>
                         <option value="a-to-z">Name: A to Z</option>
                         <option value="z-to-a">Name: Z to A</option>
                         <option value="low-to-high">Price: Low to High</option>
@@ -122,8 +121,13 @@
             <div class="cart-total">
                 <h3>Total: $<span id="cart-total">0.00</span></h3>
             </div>
-            <button id="checkout-button">Checkout</button>
+            <button class="button">Checkout</button>
         </section>
+        <section id="checkout-view" class="hidden">
+            <h2>You have successfully checked out!</h2>
+            <button class="button">Continue Shopping</button>
+        </section>
+
         <section id="account-view" class="hidden">
             <!-- Login View with a form and a link to sign up -->
              <div id="login-view">
@@ -154,33 +158,30 @@
 
             </div>
             
-            <!-- If logged in, display 2 tabs, one for account and one for previous orders -->
+            <!-- If logged in, display account info -->
             <div id="account-info" class="hidden">
                 <h2>Account Info</h2>
                 <p id="user-email">User Email: user@example.com</p>
                 <button id="logout-button">Logout</button>
             </div>
         </section>
+        <section id="contact-view" class="hidden">
+            <div>
+                <h2 class="dark-mode">Contact Us</h2>
+                <p class="dark-mode">Get in touch with us</p>
+            </div>
+            <form id="contact-form">
+                    <label for="contact-name">Name</label>
+                    <input type="text" id="contact-name" required>
+                    <label for="contact-email">Email</label>
+                    <input type="email" id="contact-email" required>
+                    <label for="contact-message">Message</label>
+                    <textarea id="contact-message" required></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
     </main>
-    <div id="contact-section">
-        <h2 class="dark-mode">Contact Us</h2>
-        <p class="dark-mode">Get in touch with us</p>
-        <form id="contact-form">
-            <div>
-                <label for="contact-name">Name</label>
-                <input type="text" id="contact-name">
-            </div>
-            <div>
-                <label for="contact-email">Email</label>
-                <input type="email" id="contact-email">
-            </div>
-            <div>
-                <label for="contact-message">Message</label>
-                <textarea id="contact-message"></textarea>
-            </div>
-            <button type="submit">Submit</button>
-        </form>
-    </div>
+
     <footer class="dark-mode">
         <div>
             <h1>get coffee beans</h1>
@@ -194,19 +195,14 @@
             <p>+1 (123) 456-7890</p>
         </div>
     </footer>
-    <!-- Cart Notification Modal for when a product is added to cart -->
-    <div id="cart-modal" class="modal hidden">
+    <!-- Notification Modal -->
+    <div id="notification-modal" class="modal hidden">
+        
         <div class="modal-content">
             <span class="close">&times;</span>
-            <h2>Product X was added to Cart</h2>
-            <div id="cart-item">
-                <!-- Cart items will be dynamically inserted here -->
+            <div id="notification-message">  
+                <!-- Dynamically generated notification message -->      
             </div>
-            <div class="cart-total">
-                <h3>Total: $<span id="cart-total">0.00</span></h3>
-            </div>
-            <button id="continue-shopping-btn">Continue Shopping</button>
-            <button id="go-to-cart-btn">Go to Cart</button>
         </div>
     </div>
 

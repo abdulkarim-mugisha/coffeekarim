@@ -2,6 +2,7 @@
 
 const express = require("express");
 const app = express();
+// const multer = require("multer");
 const bodyParser = require('body-parser');
 const session = require('express-session');
 const bcrypt = require('bcrypt');
@@ -11,6 +12,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.static("public"));
 app.use(express.json());
 app.use(bodyParser.json());
+// app.use(multer().none());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(session({
     secret: '123456789',
@@ -82,6 +84,7 @@ app.get("/data", async (req, res) => {
     }
 });
 
+
 app.get("/cart", async (req, res) => {
     try {
         let resp = await fsp.readFile("data/cart.json", "utf8");
@@ -93,7 +96,6 @@ app.get("/cart", async (req, res) => {
         res.status(500).send("Error in fetching data.");
     }
 });
-
 
 app.post("/addToCart", async (req, res) => {
     try {

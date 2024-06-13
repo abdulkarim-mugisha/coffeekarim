@@ -1,3 +1,8 @@
+/* Abdulkarim Mugisha
+ * CS 132 Spring 2024
+ * Style sheet for the coffee store final project. */
+
+
 body,
 #browse-view,
 #content,
@@ -6,525 +11,554 @@ nav,
 nav ul,
 footer,
 .store,
-.search-sort-bar,
+.sort-bar,
 .product-card,
 #results-view,
 #pagination-controls,
 #product-view,
-#product-container {
-    justify-content: space-between;
-    display: flex;
+#product-container,
+main,
+#account-view,
+#contact-view {
+  justify-content: space-between;
+  display: flex;
 }
 
-nav { 
-    align-items: center;
-    gap: 20px;
+#contact-view {
+  justify-content: space-around;
+}
+
+nav {
+  align-items: center;
+  gap: 20px;
 }
 
 body,
 #content,
 .product-card,
-#product-view {
-    flex-direction: column;
+#product-view,
+#contact-view {
+  flex-direction: column;
 }
 
-header, 
-footer{
-    background-color: #E8DDCB;
+header,
+footer {
+  background-color: #e8ddcb;
 }
 
 header {
-    position: sticky;
-    top: 0;
+  position: sticky;
+  top: 0;
 }
 
 body {
-    font-family: 'Avenir', sans-serif;
-    margin: 0;
-    padding: 0;
-    min-height: 100vh;
+  font-family: "Avenir", sans-serif;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
 }
 
 .store {
-    justify-content: start;
-    gap: 5px;
+  justify-content: start;
+  gap: 5px;
 }
 
 .store-logo {
-    width: 10pt;
-    height: auto;
+  width: 10pt;
+  height: auto;
 }
 
 header {
-    align-items: center;
-    padding: 20px;
-    border-bottom: 1px solid #ddd;
+  align-items: center;
+  padding: 20px;
+  border-bottom: 1px solid #ddd;
 }
 
-footer h1, 
+footer h1,
 header h1 {
-    margin: 0;
-    font-family: 'Lobster', cursive;
-    font-size: 3em;
-    /* font-size: 2em; Adjust the size as needed */
-    /* color: #333; Adjust the color as needed */
+  margin: 0;
+  font-family: "Lobster", cursive;
+  font-size: 3em;
+}
+
+footer h1{
+  font-size: 2em;
 }
 
 nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    gap: 15px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 15px;
 }
 
 nav ul li a {
-    text-decoration: none;
-    color: black;
+  text-decoration: none;
+  color: black;
 }
 
 aside {
-    width: 200px;
-    padding: 20px;
+  width: 200px;
+  padding: 20px;
 }
 
 aside {
-    width: 200px;
-    padding: 20px;
-    border-right: 1px solid #444;
-    border-radius: 5px;
-    margin-bottom: 20px;
+  width: 200px;
+  padding: 20px;
+  border-right: 1px solid #444;
+  border-radius: 5px;
+  margin-bottom: 20px;
 }
 
 .filter {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .filter-header {
-    cursor: pointer;
-    padding: 10px;
-    border-bottom: 2px #333 solid;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  cursor: pointer;
+  padding: 10px;
+  border-bottom: 2px #333 solid;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .filter-content {
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.3s ease-out;
-    padding-left: 10px;
-    margin: 10px 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+  padding-left: 10px;
+  margin: 10px 0;
 }
 
 .filter.active .filter-content {
-    max-height: 500px;
+  max-height: 500px;
 }
 
 .filter input[type="checkbox"] {
-    margin-right: 10px;
+  margin-right: 10px;
 }
 
 .filter label {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .show-more {
-    cursor: pointer;
-    color: blue;
-    text-decoration: underline;
-    font-size: 14px;
-    margin-top: 10px;
-    display: inline-block;
+  cursor: pointer;
+  color: blue;
+  text-decoration: underline;
+  font-size: 14px;
+  margin-top: 10px;
+  display: inline-block;
 }
 
 #results {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
-    padding: 20px;
-    overflow: auto;
-    height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  padding: 20px;
+  overflow: auto;
+  height: 100vh;
 }
 
 #results.selected-view {
-    grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 1fr);
 }
 
 .product-card {
-    border: 1px solid #ddd;
-    padding: 10px;
-    cursor: pointer;
-    border-radius: 10px;
-    height: fit-content;
+  border: 1px solid #ddd;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 10px;
+  height: fit-content;
 }
 
 .img-container {
-    height: 200px;
-    align-items: center;
+  height: 200px;
+  align-items: center;
 }
 
 .img-container > img {
-    width: 100%;  
-    max-height: 100%;  
+  width: 100%;
+  max-height: 100%;
 }
 
 footer {
-    justify-content: space-around;
-    padding: 10px;
-    border-top: 1px solid #ddd;
+  justify-content: space-around;
+  padding: 10px;
+  border-top: 1px solid #ddd;
 }
 
 #selected-coffee-details {
-    width: 70%;
-    border-left: 1px solid #444;
-    padding: 10px;
-    overflow: auto;
+  width: 70%;
+  border-left: 1px solid #444;
+  padding: 10px;
+  overflow: auto;
 }
 
 #selected-coffee-details img {
-    width: 100%;
+  width: 100%;
 }
 
+#contact-view.hidden,
 #login-view.hidden,
 #product-view.hidden,
 #browse-view.hidden,
+#account-view.hidden,
 .hidden {
-    display: none;
+  display: none;
 }
 
 .product-image img {
-    width: 100%;
-    max-width: 300px;
-    height: auto;
+  width: 100%;
+  max-width: 300px;
+  height: auto;
 }
 
-select, select option {
-    font-family: 'Avenir', sans-serif;
-    padding: 5px;
-    border-radius: 4px;
+select,
+select option {
+  font-family: "Avenir", sans-serif;
+  padding: 5px;
+  border-radius: 4px;
 }
 
-.search-sort-bar {
-    justify-content: end;
-    align-items: center;
-    padding: 20px;
-    gap: 10px;
-    border-bottom: 1px solid #444;
+.sort-bar {
+  justify-content: end;
+  align-items: center;
+  padding: 20px;
+  gap: 10px;
+  border-bottom: 1px solid #444;
 }
 
 .product-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-    border-bottom: 1px solid #444;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #444;
 }
 
-/* The Modal (background) */
 .modal {
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgba(0,0,0,0.4);
-    padding-top: 60px;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding-top: 60px;
 }
 
-/* Modal Content */
 .modal-content {
-    background-color: #121212;
-    margin: 5% auto;
-    padding: 20px;
-    border: 1px solid #888;
-    width: 80%;
-    border-radius: 10px;
+  background-color: #121212;
+  margin: 5% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  border-radius: 10px;
 }
 
-/* The Close Button */
 .close {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
 }
 
 .close:hover,
 .close:focus {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 .cart-total {
-    margin-top: 20px;
+  margin-top: 20px;
 }
 
-#checkout-button {
-    background-color: #333;
-    color: white;
-    padding: 15px 20px;
-    border: none;
-    cursor: pointer;
-    width: 100%;
-    font-size: 18px;
+#selected-coffee-details button,
+.button {
+  background-color: #333;
+  color: white;
+  padding: 15px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  font-family: 'Avenir', sans-serif;
+  /* font-size: 18px; */
 }
 
-#checkout-button:hover {
-    background-color: #444;
+#selected-coffee-details button:hover,
+.button:hover {
+  background-color: #444;
 }
 
 .no-scroll {
-    overflow: hidden;
+  overflow: hidden;
 }
 
-/* Dark Mode styles */
-body.dark-mode {
-    background-color: #121212;
-    color: #ffffff;
+body {
+  background-color: #121212;
+  color: #ffffff;
 }
 
-header.dark-mode, 
-footer.dark-mode {
-    background-color: #333;
+header,
+footer {
+  background-color: #333;
 }
 
-.dark-mode nav ul li a {
-    color: #ffffff;
+nav ul li a {
+  color: #ffffff;
 }
 
-.product-card.dark-mode {
-    border: 1px solid #444;
+.product-card {
+  border: 1px solid #444;
 }
 
-.modal-content.dark-mode {
-    background-color: #222;
-    color: #ffffff;
+.modal-content {
+  background-color: #222;
+  color: #ffffff;
 }
 
 header a {
-    text-decoration: none; 
-    color: inherit;
+  text-decoration: none;
+  color: inherit;
 }
 
 #pagination-controls {
-    justify-content: center;
+  justify-content: center;
 }
 
 .pagination-button {
-    margin: 5px;
-    padding: 10px;
-    border: none;
-    background-color: #E8DDCB;
-    cursor: pointer;
+  margin: 5px;
+  padding: 10px;
+  border: none;
+  background-color: #9a958d;
+  cursor: pointer;
 }
 
 .pagination-button.active {
-    background-color: #333;
-    color: white;
+  background-color: #333;
+  color: white;
 }
 
 .pagination-button:hover {
-    background-color: #444;
-    color: white;
+  background-color: #444;
+  color: white;
 }
 
 input[type="text"] {
-    padding: 5px;
-    margin: 10px 0;
-    font-size: 16px;
-    font-family: 'Avenir', sans-serif;
-    width: 90%;
-    border: 2px solid #ccc;
-    border-radius: 50px;
-    align-self: center;
+  padding: 5px;
+  margin: 10px 0;
+  font-size: 16px;
+  font-family: "Avenir", sans-serif;
+  width: 90%;
+  border: 2px solid #ccc;
+  border-radius: 50px;
+  align-self: center;
 }
 
 #suggestions {
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-    max-height: 200px;
-    overflow-y: auto;
-    position: fixed;
-    background-color: #121212;
-    border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  max-height: 200px;
+  overflow-y: auto;
+  position: fixed;
+  background-color: #121212;
+  border-radius: 10px;
 }
 
 #suggestions div {
-    padding: 10px;
-    cursor: pointer;
+  padding: 10px;
+  cursor: pointer;
 }
 
 #suggestions div:hover,
 #course-info {
-    background-color: #333;
+  background-color: #333;
 }
 
 .quick-view-btn {
-    background-color: #333;
-    color: white;
-    padding: 10px;
-    margin-top: 15px;
-    border: none;
-    cursor: pointer;
-    width: 100%;
-    font-size: 10pt;
-    font-family: 'Avenir', sans-serif;
-    border-radius: 10px;
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  margin-top: 15px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  font-size: 10pt;
+  font-family: "Avenir", sans-serif;
+  border-radius: 10px;
 }
 
 .quick-view-btn:hover {
-    background-color: #444;
+  background-color: #444;
 }
 
-.product-header a, .product-header a:visited {
-    text-decoration: none;
-    color: #ccc;
+.product-header a,
+.product-header a:visited {
+  text-decoration: none;
+  color: #ccc;
 }
 
-/* New styles for cart-view, account-view, and contact-section */
-#cart-view {
-    flex-direction: column;
-    padding: 20px;
-    align-items: start;
+#cart-view,
+#checkout-view {
+  padding: 20px;
+  align-items: start;
 }
 
-#cart-view h2 {
-    margin-bottom: 20px;
+#cart-view h2,
+#checkout-view h2 {
+  margin-bottom: 20px;
 }
 
 #cart-items {
-    width: 100%;
-    border-top: 1px solid #ddd;
-    border-bottom: 1px solid #ddd;
-    padding: 10px 0;
+  width: 100%;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  padding: 10px 0;
 }
 
 .cart-item {
-    display: flex;
-    justify-content: space-between;
-    padding: 10px 0;
-    border-bottom: 1px solid #ddd;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
 }
 
 #account-view {
-    flex-direction: column;
-    padding: 20px;
-    align-items: start;
+  flex-direction: column;
+  padding: 20px;
+  align-items: start;
 }
 
 #login-form,
 #sign-up-form {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    margin-bottom: 20px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
 }
 
 #login-form label,
 #sign-up-form label {
-    font-size: 14px;
+  font-size: 14px;
 }
 
 #login-form input,
 #sign-up-form input {
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    font-size: 16px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
 }
 
 #login-form button,
 #sign-up-form button {
-    background-color: #333;
-    color: white;
-    padding: 10px;
-    border: none;
-    cursor: pointer;
-    font-size: 16px;
-    border-radius: 4px;
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 4px;
 }
 
 #login-form button:hover,
 #sign-up-form button:hover {
-    background-color: #444;
+  background-color: #444;
 }
 
 #account-info {
-    width: 100%;
-    padding: 20px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
+  width: 50%;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
 }
 
 #account-info p {
-    margin: 10px 0;
+  margin: 10px 0;
 }
 
 #logout-button {
-    background-color: #e74c3c;
-    color: white;
-    padding: 10px;
-    border: none;
-    cursor: pointer;
-    font-size: 16px;
-    border-radius: 4px;
+  background-color: #e74c3c;
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 4px;
 }
 
 #logout-button:hover {
-    background-color: #c0392b;
+  background-color: #c0392b;
 }
 
-#contact-section {
-    padding: 20px;
-    border-top: 1px solid #444;
+#contact-view {
+  padding: 20px;
 }
 
-#contact-section h2 {
-    margin-bottom: 10px;
+#contact-view h2 {
+  margin-bottom: 10px;
 }
 
-#contact-section p {
-    margin-bottom: 20px;
+#contact-view p {
+  margin-bottom: 20px;
 }
 
-#contact-section form {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+#contact-view form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
-#contact-section label {
-    font-size: 14px;
+#contact-view label {
+  font-size: 14px;
 }
 
-#contact-section input,
-#contact-section textarea {
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    font-size: 16px;
+#contact-view input,
+#contact-view textarea {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
 }
 
-#contact-section button {
-    background-color: #333;
-    color: white;
-    padding: 10px;
-    border: none;
-    cursor: pointer;
-    font-size: 16px;
-    border-radius: 4px;
+#contact-view button {
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 4px;
 }
 
-#contact-section button:hover {
-    background-color: #444;
+#contact-view button:hover {
+  background-color: #444;
 }
 
 .filter-content input[type="number"] {
-    /* width: calc(50% - 10px);  */
-    margin: 5px;
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    font-size: 14px;
+  margin: 5px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
 }
 
+main,
+#account-view {
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+#product-view,
+#cart-view,
+#checkout-view {
+  width: 50%;
+}
+
+#login-view,
+#sign-up-view,
+#contact-view {
+  width: 30%;
+}
