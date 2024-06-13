@@ -1,1 +1,1 @@
-# A Coffee Platform to Connect Roasters and Farmers
+# A platform to source green coffee beans from top importers.
