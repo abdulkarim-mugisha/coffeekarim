@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GET coffee</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="utils.js"></script>
+    <!-- <script defer src="localData.js"></script> -->
+    <script defer src="script.js"></script>
+</head>
+<body class="dark-mode">
+    <header class="dark-mode">
+        <a href="index.html">
+            <h1>get coffee beans</h1>
+        </a>
+        <nav>
+            <div class="search-bar">
+                <input type="text" id="search-input" placeholder="Search for coffee...">
+                <div id="suggestions" class="hidden"></div>
+            </div>
+            <ul>
+              <li><a href="#" id="account-link">Account</a></li>
+              <li><a href="#" id="cart-button">🛒</a></li>
+            </ul>
+          </nav>
+    </header>     
+    <main>
+        <section id="browse-view">
+            <aside>
+                    <div class="filter">
+                        <label for="price" class="filter-header dark-mode">Price</label>
+                        <div class="filter-content">
+                            <input type="number" id="min-price" name="min-price" placeholder="Min Price">
+                            <input type="number" id="max-price" name="max-price" placeholder="Max Price">
+                        </div>
+                    </div>
+                    <div class="filter">
+                        <label for="cupping-score" class="filter-header dark-mode">Cupping Score</label>
+                        <div class="filter-content">
+                            <input type="number" id="min-cupping-score" name="min-cupping-score" placeholder="Min Score">
+                            <input type="number" id="max-cupping-score" name="max-cupping-score" placeholder="Max Score">
+                        </div>
+                    </div>
+                    <div class="filter">
+                        <label for="process_method" class="filter-header dark-mode">Process Method</label>
+                        <div class="filter-content" id="process-method-filter">
+                            <!-- Dynamically generated process method options -->
+                        </div>
+                    </div>
+                    <div class="filter">
+                        <label for="origin" class="filter-header dark-mode">Origin</label>
+                        <div class="filter-content" id="origin-filter">
+                            <!-- Dynamically generated origin options -->
+                        </div>
+                    </div>
+                    <div class="filter">
+                        <label for="store" class="filter-header dark-mode">Store</label>
+                        <div class="filter-content" id="importer-filter">
+                            <!-- Dynamically generated store options -->
+                        </div>
+                    </div>
+            </aside>
+            
+            <div id="content">
+                <div class="search-sort-bar">
+                    <label for="sort">Sort by</label>
+                    <select id="sort">
+                        <option value="relevance">Relevance</option>
+                        <option value="a-to-z">Name: A to Z</option>
+                        <option value="z-to-a">Name: Z to A</option>
+                        <option value="low-to-high">Price: Low to High</option>
+                        <option value="high-to-low">Price: High to Low</option>
+                        <option value="cupping-score">Cupping Score</option>
+                    </select>
+                </div>
+                <div id="results-view"> 
+                    <div>
+                        <div id="results"></div>
+                        <div id="pagination-controls"></div>
+                    </div>
+                    <div id="selected-coffee-details" class="hidden">
+                        <div class="product-header">
+                            <a id="selected-coffee-importer">Importer</a>
+                            <span class="close">&times;</span>
+                        </div>
+                        <div class="product-image">
+                            <img id="selected-coffee-image" src="https://images.pexels.com/photos/1695052/pexels-photo-1695052.jpeg" alt="Coffee Image">
+                        </div>
+                        <h2 id="selected-coffee-name">Name of Coffee</h2>
+                        <p id="selected-coffee-notes">Notes in a few sentences.</p>
+                        <p id="selected-coffee-price">$0.00</p>
+                        <div class="product-info">
+                            <div id="selected-coffee-process-method">Process method: Method</div>
+                            <div id="selected-coffee-cupping-score">Cupping score: 0</div>
+                        </div>
+                        <div class="product-purchase">
+                            <label for="quantity">Number of bags</label>
+                            <select id="quantity">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="2">4</option>
+                                <option value="3">5</option>
+                            </select>
+                            <button>Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="product-view" class="hidden">
+            <!-- Product view with large image on left, details on right -->
+           <div id="recommended-container"></div>
+           <!-- Recommended products (you may like below the product view) -->
+        </section>
+        <section id="cart-view" class="hidden">
+            <!-- Cart view with cart item, cart total, checkout button -->
+            <h2>Your Cart</h2>
+            <div id="cart-items"></div>
+            <div class="cart-total">
+                <h3>Total: $<span id="cart-total">0.00</span></h3>
+            </div>
+            <button id="checkout-button">Checkout</button>
+        </section>
+        <section id="account-view" class="hidden">
+            <!-- Login View with a form and a link to sign up -->
+             <div id="login-view">
+                <h2>Login</h2>
+                <form id="login-form">
+                    <label for="login-email">Email:</label>
+                    <input type="email" id="login-email" required>
+                    <label for="login-password">Password:</label>
+                    <input type="password" id="login-password" required>
+                    <button type="submit">Login</button>
+                </form>
+                <p>Don't have an account? <a href="#" id="sign-up-link">Sign up</a></p>
+             </div>
+            
+            <!-- Sign up view (hidden) with a form for info -->
+            <div id="sign-up-view" class="hidden">
+                <h2>Sign Up</h2>
+                <form id="sign-up-form">
+                    <label for="sign-up-name">Name:</label>
+                    <input type="text" id="sign-up-name" required>
+                    <label for="sign-up-email">Email:</label>
+                    <input type="email" id="sign-up-email" required>
+                    <label for="sign-up-password">Password:</label>
+                    <input type="password" id="sign-up-password" required>
+                    <button type="submit">Sign Up</button>
+                </form>
+                <p>Already have an account? <a href="#" id="login-link">Log in</a></p>
+
+            </div>
+            
+            <!-- If logged in, display 2 tabs, one for account and one for previous orders -->
+            <div id="account-info" class="hidden">
+                <h2>Account Info</h2>
+                <p id="user-email">User Email: user@example.com</p>
+                <button id="logout-button">Logout</button>
+            </div>
+        </section>
+    </main>
+    <div id="contact-section">
+        <h2 class="dark-mode">Contact Us</h2>
+        <p class="dark-mode">Get in touch with us</p>
+        <form id="contact-form">
+            <div>
+                <label for="contact-name">Name</label>
+                <input type="text" id="contact-name">
+            </div>
+            <div>
+                <label for="contact-email">Email</label>
+                <input type="email" id="contact-email">
+            </div>
+            <div>
+                <label for="contact-message">Message</label>
+                <textarea id="contact-message"></textarea>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <footer class="dark-mode">
+        <div>
+            <h1>get coffee beans</h1>
+        </div>
+        <div>
+            <p>1200 E California Blvd</p>
+            <p>Pasadena, CA 91125</p>
+        </div>
+        <div>
+            <p>info@getcoffeebeans.com</p>
+            <p>+1 (123) 456-7890</p>
+        </div>
+    </footer>
+    <!-- Cart Notification Modal for when a product is added to cart -->
+    <div id="cart-modal" class="modal hidden">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Product X was added to Cart</h2>
+            <div id="cart-item">
+                <!-- Cart items will be dynamically inserted here -->
+            </div>
+            <div class="cart-total">
+                <h3>Total: $<span id="cart-total">0.00</span></h3>
+            </div>
+            <button id="continue-shopping-btn">Continue Shopping</button>
+            <button id="go-to-cart-btn">Go to Cart</button>
+        </div>
+    </div>
+
+</body>
+</html>

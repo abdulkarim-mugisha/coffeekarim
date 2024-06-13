@@ -1,0 +1,278 @@
+[
+    {
+      "name": "Bolivia \u2013 FTO La Paz \u2013 La Cooperativa Corpus Cristhy Illampu R.L \u2013 Red Catuai & Typica \u2013 FLO ID 3645",
+      "notes": "\"Molasses, cocoa, and citrus zest flavors with tart acidity and mild sugary sweetness.\"",
+      "price": "$5.14",
+      "process_method": "Washed",
+      "cupping_score": "82",
+      "image_url": "https://res.cloudinary.com/cafeimports/image/fetch/w_1600,c_scale/https://media.cafeimports.com/photos/Cafe_Imports_Bolivia_Cooperativa_San_Juan-11-2023-06-28-194912.jpg",
+      "url": "https://bodega.coffee/product/bolivia-fto-la-paz-la-cooperativa-corpus-cristhy-illampu-r-l-red-catuai-typica-flo-id-3645/",
+      "importer": "labodega",
+      "origin": "Bolivia"
+  },
+  {
+      "name": "Brazil \u2013 Community Select \u2013 Natural \u2013 Cerrado \u2013 Catuai and Mundo Novo and Topazio",
+      "notes": "\"Dried cranberry with mild malt flavors. Strong boozy acidity and mellow candy-like sweetness.\"",
+      "price": "$5.16",
+      "process_method": "Natural",
+      "cupping_score": "87",
+      "image_url": "https://res.cloudinary.com/cafeimports/image/fetch/w_1600,c_scale/https://media.cafeimports.com/photos/Cafe_Imports_Brazil_Ofi_Cerrado-3-2024-02-15-223132.jpg",
+      "url": "https://bodega.coffee/product/brazil-community-select-natural-cerrado-catuai-and-mundo-novo-and-topazio/",
+      "importer": "labodega",
+      "origin": "Brazil"
+  },
+  {
+      "name": "Brazil \u2013 Decaf Origin Select \u2013 MWP \u2013 Serra Negra",
+      "notes": "\"Mild malt and fruit flavors with mellow tart acidity and sweetness.\"",
+      "price": "$4.86",
+      "process_method": null,
+      "cupping_score": "82",
+      "image_url": "https://res.cloudinary.com/cafeimports/image/fetch/w_1600,c_scale/https://media.cafeimports.com/photos/Cafe_Imports_Brazil_DP-2022-05-10-124828.jpg",
+      "url": "https://bodega.coffee/product/decaf-origin-select-mwp-serra-negra-2/",
+      "importer": "labodega",
+      "origin": "Brazil"
+  },
+  {
+      "name": "Brazil \u2013 Organic Cascara \u2013 Cascara Tea \u2013 Espirito Santo \u2013 Fazenda Camocim  \u2013 Biodynamic",
+      "notes": "\"Hibiscus tea, raisin, and cider flavors with tangy acidity.\"",
+      "price": "$15.87",
+      "process_method": null,
+      "cupping_score": null,
+      "image_url": "https://res.cloudinary.com/cafeimports/image/fetch/w_1600,c_scale/https://media.cafeimports.com/photos/Cafe_Imports_Brazil_Fazenda_Camocim-7-2021-11-02-192558.jpg",
+      "url": "https://bodega.coffee/product/brazil-org-biod-cascara-cascara-tea-espirito-santo-fazenda-camocim-biodynamic-vacpack-3/",
+      "importer": "labodega",
+      "origin": "Brazil"
+  },
+  {
+      "name": "Brazil \u2013 Serra Negra \u2013 Natural",
+      "notes": "\"Mild cocoa and almond flavors with mellow acidity and sweetness.\"",
+      "price": "$4.77",
+      "process_method": null,
+      "cupping_score": "81",
+      "image_url": "https://res.cloudinary.com/cafeimports/image/fetch/w_1600,c_scale/https://media.cafeimports.com/photos/Cafe_Imports_Brazil_Serra_Negra-1-2022-04-26-124329.jpg",
+      "url": "https://bodega.coffee/product/brazil-serra-negra-natural-36/",
+      "importer": "labodega",
+      "origin": "Brazil"
+  },
+  {
+      "name": "Burundi \u2013 Microlot \u2013 Gakenke \u2013 Kayanza \u2013 Washed",
+      "notes": "\"Dark chocolate with mild cooked grapefruit flavors. Sugary sweetness and tart citric acidity.\"",
+      "price": "$6.05",
+      "process_method": "Washed",
+      "cupping_score": "85",
+      "image_url": "https://res.cloudinary.com/cafeimports/image/fetch/w_1600,c_scale/https://media.cafeimports.com/photos/Cafe_Imports_Burundi_Mirolot2-2022-04-28-154210.jpg",
+      "url": "https://bodega.coffee/product/burundi-microlot-gakenke-kayanza-washed/",
+      "importer": "labodega",
+      "origin": "Burundi"
+  },
+  {
+      "name": "Colombia \u2013 FTO Narino \u2013 FUDAM \u2013 La Union \u2013 Narino \u2013 Castillo and Colombia \u2013 FLO ID 38797",
+      "notes": "\"Brown sugar with mellow fresh tropical fruit and cocoa flavors. Tart acidity and mellow sweetness.\"",
+      "price": "$5.45",
+      "process_method": "Washed",
+      "cupping_score": "82",
+      "image_url": "https://res.cloudinary.com/cafeimports/image/fetch/w_1600,c_scale/https://media.cafeimports.com/photos/Cafe_Imports_Colombia_FUDAM-4-2024-02-27-211558.jpg",
+      "url": "https://bodega.coffee/product/colombia-fto-narino-fudam-la-union-narino-castillo-and-colombia-flo-id-38797-3/",
+      "importer": "labodega",
+      "origin": "Colombia"
+  },
+  {
+      "name": "Costa Rica \u2013 Cafe Vida \u2013 Central Valley",
+      "notes": "\"Mild graham and fresh coffee cherry flavors with tart citric acidity and mellow sweetness.\"",
+      "price": "$5.05",
+      "process_method": null,
+      "cupping_score": "81",
+      "image_url": "https://res.cloudinary.com/cafeimports/image/fetch/w_1600,c_scale/https://media.cafeimports.com/photos/Cafe_Imports_Costa_Rica_Cafe_Vida3-2022-01-12-143513.jpg",
+      "url": "https://bodega.coffee/product/costa-rica-cafe-vida-central-valley-7/",
+      "importer": "labodega",
+      "origin": "Costa"
+  },
+  {
+      "name": "Ecuador \u2013 Microlot \u2013 Milton Villavicencio \u2013 Finca Cahuasqui \u2013 Caturra \u2013 Washed",
+      "notes": "\"Cooked apple, panela, and cooked citrus fruit flavors with juicy malic acidity and syrupy sweetness.\"",
+      "price": "$9.34",
+      "process_method": "Washed",
+      "cupping_score": "86",
+      "image_url": "https://res.cloudinary.com/cafeimports/image/fetch/w_1600,c_scale/https://media.cafeimports.com/photos/Cafe_Imports_Ecuador_Microlot-2022-05-02-202804.jpg",
+      "url": "https://bodega.coffee/product/ecuador-microlot-milton-villavicencio-finca-cahuasqui-caturra-washed/",
+      "importer": "labodega",
+      "origin": "Ecuador"
+  },
+  {
+      "name": "Ecuador \u2013 Microlot \u2013 William Abad \u2013 Zamora \u2013 Typica \u2013 Washed",
+      "notes": "\"Fresh pear, cooked tropical fruit, and caramel flavors with balanced acidity and candy-like sweetness.\"",
+      "price": "$9.34",
+      "process_method": "Washed",
+      "cupping_score": "86",
+      "image_url": "https://res.cloudinary.com/cafeimports/image/fetch/w_1600,c_scale/https://media.cafeimports.com/photos/Cafe_Imports_Ecuador_Microlot-2022-05-02-202804.jpg",
+      "url": "https://bodega.coffee/product/ecuador-microlot-william-abad-zamora-typica-washed/",
+      "importer": "labodega",
+      "origin": "Ecuador"
+  },
+  {
+      "name": "El Salvador \u2013 Chalate Microlot \u2013 Luis Hernandez \u2013 Finca Cerro Negro \u2013 Pacas \u2013 Washed",
+      "notes": "\"Sweet and tart with almond and herbal coffee cherry flavors.\"",
+      "price": "$6.77",
+      "process_method": null,
+      "cupping_score": "80",
+      "image_url": "https://res.cloudinary.com/cafeimports/image/fetch/w_1600,c_scale/https://media.cafeimports.com/photos/Cafe_Imports_El_Salvador_Default-2022-09-13-144238.jpg",
+      "url": "https://bodega.coffee/product/el-salvador-chalate-microlot-luis-hernandez-finca-cerro-negro-pacas-washed/",
+      "importer": "labodega",
+      "origin": "El Salvador"
+  },
+  {
+      "name": "Ethiopia \u2013 Decaf MC",
+      "notes": "\"Mellow sweetness.\"",
+      "price": "$5.39",
+      "process_method": null,
+      "cupping_score": "78",
+      "image_url": "https://res.cloudinary.com/cafeimports/image/fetch/w_1600,c_scale/https://media.cafeimports.com/photos/Cafe_Imports_GEthiopia_DP-2022-05-10-130635.jpg",
+      "url": "https://bodega.coffee/product/ethiopia-decaf-mc-4/",
+      "importer": "labodega",
+      "origin": "Ethiopia"
+  },
+  {
+      "name": "Ethiopia \u2013 Natural Yirgacheffe \u2013 Grade 1 \u2013 Chelbessa",
+      "notes": "\"Vanilla, cooked strawberry, cooked stone fruit, and fresh hibiscus flavors with juicy acidity and clean fruit-like sweetness.\"",
+      "price": "$6.20",
+      "process_method": "Natural",
+      "cupping_score": "87",
+      "image_url": "https://res.cloudinary.com/cafeimports/image/fetch/w_1600,c_scale/https://media.cafeimports.com/photos/Cafe_Imports_GEthiopia_DP-2022-05-10-130635.jpg",
+      "url": "https://bodega.coffee/product/ethiopia-natural-yirgacheffe-grade-1-chelbessa/",
+      "importer": "labodega",
+      "origin": "Ethiopia"
+  },
+  {
+      "name": "Ethiopia \u2013 Organic Natural Guji \u2013 Kayon Mountain Farm \u2013 Shakiso \u2013 Grade 1",
+      "notes": "\"Perfumey jasmine and cooked berry with mild praline flavors. Tart acidity and mellow fruit-like sweetness.\"",
+      "price": "$6.70",
+      "process_method": "Natural",
+      "cupping_score": "86",
+      "image_url": "https://res.cloudinary.com/cafeimports/image/fetch/w_1600,c_scale/https://media.cafeimports.com/photos/Cafe_Imports_Ethiopia_Kayon_Mountain-3-2022-08-02-015234.jpg",
+      "url": "https://bodega.coffee/product/ethiopia-organic-natural-guji-kayon-mountain-farm-shakiso-grade-1-7/",
+      "importer": "labodega",
+      "origin": "Ethiopia"
+  },
+  {
+      "name": "Guatemala \u2013 FTO Huehuetenango \u2013 AAPICAFI \u2013 FLO ID 39415",
+      "notes": "\"Chocolate and graham flavors with juicy acidity and mellow sweetness.\"",
+      "price": "$5.59",
+      "process_method": "Washed",
+      "cupping_score": "84",
+      "image_url": "https://res.cloudinary.com/cafeimports/image/fetch/w_1600,c_scale/https://media.cafeimports.com/photos/Cafe_Imports_Guatemala_DP-2022-05-10-130751.jpg",
+      "url": "https://bodega.coffee/product/guatemala-fto-huehuetenango-aapicafi-flo-id-39415/",
+      "importer": "labodega",
+      "origin": "Guatemala"
+  },
+  {
+      "name": "Guatemala \u2013 Quetzal \u2013 Huehuetenango",
+      "notes": "\"Toffee with mild fresh citrus and amaretto flavors. Tart citric acidity and mellow sweetness.\"",
+      "price": "$5.14",
+      "process_method": null,
+      "cupping_score": "84",
+      "image_url": "https://res.cloudinary.com/cafeimports/image/fetch/w_1600,c_scale/https://media.cafeimports.com/photos/Cafe_Imports_Guatemala_DP-2022-05-10-130751.jpg",
+      "url": "https://bodega.coffee/product/guatemala-quetzal-huehuetenango-19/",
+      "importer": "labodega",
+      "origin": "Guatemala"
+  },
+  {
+      "name": "Java \u2013 Community Select \u2013 Frinsa Collective \u2013 Washed",
+      "notes": "\"Caramel and praline with mellow grapefruit and cooked tomato flavors. Tangy acidity and syrupy sweetness.\"",
+      "price": "$6.75",
+      "process_method": "Washed",
+      "cupping_score": "84",
+      "image_url": "https://res.cloudinary.com/cafeimports/image/fetch/w_1600,c_scale/https://media.cafeimports.com/photos/Cafe_Imports_Java_Frinsa_Collective-4-2021-12-08-174542.jpg",
+      "url": "https://bodega.coffee/product/java-community-select-frinsa-collective-washed-2/",
+      "importer": "labodega",
+      "origin": "Java"
+  },
+  {
+      "name": "Java \u2013 Farm Select  \u2013 Frinsa \u2013 Riunggunung Estate \u2013 Anaerobic \u2013 Natural",
+      "notes": "\"Strong cooked cranberry and potpourri-like rose flavors with lots of boozy acidity and mellow sugary sweetness.\"",
+      "price": "$7.59",
+      "process_method": "Natural",
+      "cupping_score": "86",
+      "image_url": "https://res.cloudinary.com/cafeimports/image/fetch/w_1600,c_scale/https://media.cafeimports.com/photos/Cafe_Imports_Java_Frinsa_Collective-1-2022-11-08-134122.jpg",
+      "url": "https://bodega.coffee/product/java-farm-select-frinsa-riunggunung-estate-anaerobic-natural/",
+      "importer": "labodega",
+      "origin": "Java"
+  },
+  {
+      "name": "Kenya \u2013 Microlot \u2013 Rung\u2019eto Peaberry",
+      "notes": "\"Significant tangy acidity. Soft fruit-like sweetness. Appreciable caramel flavors.\"",
+      "price": "$8.23",
+      "process_method": "Microlot",
+      "cupping_score": "83",
+      "image_url": "https://res.cloudinary.com/cafeimports/image/fetch/w_1600,c_scale/https://media.cafeimports.com/photos/Cafe_Imports_Kenya_Microlot-3-2022-05-03-033035.jpg",
+      "url": "https://bodega.coffee/product/kenya-microlot-rungeto-peaberry/",
+      "importer": "labodega",
+      "origin": "Kenya"
+  },
+  {
+      "name": "Mexico \u2013 Cristal",
+      "notes": "\"Almond with mellow fruit flavors. Mild acidity and sweetness.\"",
+      "price": "$4.48",
+      "process_method": null,
+      "cupping_score": "82",
+      "image_url": "https://res.cloudinary.com/cafeimports/image/fetch/w_1600,c_scale/https://media.cafeimports.com/photos/Cafe_Imports_Mexico_Cristal-3-2022-04-26-124234.jpg",
+      "url": "https://bodega.coffee/product/mexico-cristal-cristal-2/",
+      "importer": "labodega",
+      "origin": "Mexico"
+  },
+  {
+      "name": "Mexico \u2013 Decaf Origin Select \u2013 MWP \u2013 Cristal",
+      "notes": "\"Malt and savory flavors with tart citric acidity.\"",
+      "price": "$4.91",
+      "process_method": null,
+      "cupping_score": "83",
+      "image_url": "https://res.cloudinary.com/cafeimports/image/fetch/w_1600,c_scale/https://media.cafeimports.com/photos/Cafe_Imports_Mexico-2022-11-04-150523.jpg",
+      "url": "https://bodega.coffee/product/mexico-decaf-origin-select-mwp-cristal-4/",
+      "importer": "labodega",
+      "origin": "Mexico"
+  },
+  {
+      "name": "Papua New Guinea \u2013 Community Select \u2013 Kindeng Mill \u2013 Natural",
+      "notes": "\"Dark chocolate with tons of dried cranberry with potpourri-like rose. Lots of boozy acidity and candy-like sweetness.\"",
+      "price": "$5.64",
+      "process_method": "Natural",
+      "cupping_score": "86",
+      "image_url": "https://res.cloudinary.com/cafeimports/image/fetch/w_1600,c_scale/https://media.cafeimports.com/photos/Cafe_Imports_PNG_Kindeng_Kunjin-2-2022-11-15-125144.jpg",
+      "url": "https://bodega.coffee/product/community-select-kindeng-mill-natural-2/",
+      "importer": "labodega",
+      "origin": "Papua"
+  },
+  {
+      "name": "Peru \u2013 Decaf FTO Origin \u2013 MWP \u2013 Lima Coffee \u2013 FLO ID 34573",
+      "notes": "\"Mild malt, graham, and pecan flavors with mellow piquant acidity.\"",
+      "price": "$5.34",
+      "process_method": "Washed",
+      "cupping_score": "81",
+      "image_url": "https://res.cloudinary.com/cafeimports/image/fetch/w_1600,c_scale/https://media.cafeimports.com/photos/Cafe_Imports_Peru_Lima_Coffees-10-2021-12-09-004344.jpg",
+      "url": "https://bodega.coffee/product/peru-decaf-fto-origin-mwp-lima-coffee-flo-id-34573-3/",
+      "importer": "labodega",
+      "origin": "Peru"
+  },
+  {
+      "name": "Peru \u2013 FTO Norte \u2013 Lima Coffee \u2013 FLO ID 34573",
+      "notes": "\"Praline and clove flavors. Tart acidity and mellow candy-like sweetness.\"",
+      "price": "$5.64",
+      "process_method": "Washed",
+      "cupping_score": "81",
+      "image_url": "https://res.cloudinary.com/cafeimports/image/fetch/w_1600,c_scale/https://media.cafeimports.com/photos/Cafe_Imports_Peru_Lima_Coffees-10-2021-12-09-004344.jpg",
+      "url": "https://bodega.coffee/product/peru-fto-norte-lima-coffee-flo-id-34573-23/",
+      "importer": "labodega",
+      "origin": "Peru"
+  },
+  {
+      "name": "Rwanda \u2013 FTO Microlot 2 \u2013 COOPAC \u2013 Kirorero \u2013 Gisiza \u2013 Natural \u2013 FLO ID 35306",
+      "notes": "\"Vanilla and cooked coffee cherry flavors with tangy malic acidity and syrupy sweetness.\"",
+      "price": "$7.16",
+      "process_method": "Natural",
+      "cupping_score": "86",
+      "image_url": "https://res.cloudinary.com/cafeimports/image/fetch/w_1600,c_scale/https://media.cafeimports.com/photos/Cafe_Imports_Rwanda_COOPAC_Kigeyo-3-2021-12-09-005145.jpg",
+      "url": "https://bodega.coffee/product/rwanda-fto-microlot-2-coopac-kirorero-gisiza-natural-flo-id-35306-2/",
+      "importer": "labodega",
+      "origin": "Rwanda"
+  }
+  ]
+        
