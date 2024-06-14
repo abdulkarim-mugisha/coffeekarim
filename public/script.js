@@ -325,11 +325,19 @@ function updateCartView() {
     cart.cartItems.forEach((item, index) => {
         let cartItem = gen("div");
         cartItem.classList.add("cart-item");
-        cartItem.innerHTML = `
-            <p>${item.itemName}</p>
-            <p>${item.itemPrice} x ${item.itemAmount}</p>
-            <button class="remove-item" data-index="${index}">Remove</button>
-        `;
+        let p1 = gen("p");
+        p1.textContent = item.itemName;
+        cartItem.appendChild(p1);
+
+        let p2 = gen("p");
+        p2.textContent = `${item.itemPrice} x ${item.itemAmount}`;
+        cartItem.appendChild(p2);
+
+        let button = gen("button");
+        button.classList.add("remove-item");
+        button.setAttribute("data-index", index);
+        button.textContent = "Remove";
+        cartItem.appendChild(button);
         cart.total += parseFloat(item.itemPrice.replace("$", "")) * item.itemAmount;
         cartItemsContainer.appendChild(cartItem);
     });
